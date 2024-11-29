@@ -1,0 +1,30 @@
+				
+Module	     Scenario #  	Scenario	                                                        Description	            Requirement
+	       TS_001		successfull verification departure date field	
+Flight status	TS_002		successfull verification of  from and to field 	
+	       TS_003		verification of search flight button fuctionality by passing flight number	
+
+test case TS_001
+
+1. login to spicejet.com|URL launched successfully |test pass
+2. check flight status option enabled |click flight status option|required page showed |test pass
+3.check departure date field is enabled and suggestions showing| click the departure date field |suggestions showing and able to select the options |test pass
+
+test case TS_002
+
+1. login to spicejet.com|URL launched successfully |test pass
+2. check flight status option enabled |click flight status option|required page showed |test pass
+3. CHECK THE from field enabled |click the from option field|suggestions showing india and international regions |able to select the cities in india and international |test pass
+4.check the to field enabled | click to options field| suggestions showing india and international regions |able to select the cities in india and international |test pass	
+ 
+test case TS_003
+
+  1. login to spicejet.com|URL launched successfully |test pass
+2. check flight status option enabled |click flight status option|required page showed |test pass
+3.check departure date field is enabled and suggestions showing| click the departure date field |suggestions showing and able to select the options |test pass
+ 4. CHECK THE from field enabled |click the from option field|suggestions showing india and international regions |able to select the cities in india and international |test pass
+5.check the to field enabled | click to options field| suggestions showing india and international regions |able to select the cities in india and international |test pass
+6. check the flight no option is editable |click the flight number option |showing the ticket number starting code |test pass
+7.enter the flight number |SG-****|able to enter the flight number |test pass	
+8.check search flight option is enabled |click the search flight option |required page and info showed|test pass 
+    			

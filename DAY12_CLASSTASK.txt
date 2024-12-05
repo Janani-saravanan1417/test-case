@@ -1,0 +1,115 @@
+1.Abstraction :
+
+package .org.abs;
+
+public abstract class google {
+
+public void gpayapp(){
+         system.out.println("payment success");
+}
+
+
+     public abstract void gmail();
+
+     public abstract void gdrive ();
+}
+-----------------------------------------------------
+public  class photos extends google {
+
+      public void gmail() {
+        system.out.println("mail id is valid");
+}
+       public void gdrive() {
+          system.out.println("gdrive is full ");
+}
+--------------------------------------------------------------
+public class googleforms extends photos{
+
+public void gmail() {
+        system.out.println("mail id is valid");
+}
+       public void gdrive() {
+          system.out.println("gdrive is full ");
+
+}
+          public void forms() {
+             system.out.println("form submitted successfully ");
+}
+         
+     
+
+}
+
+public static void main (string[] args)
+
+   googleforms obj1 = new goolgeforms ();
+obj1.gmail();
+obj1.gdrive();
+obj1.forms();
+
+    photos obj2 = new photos ();
+  obj2.gmail();
+obj2.gdrive ();
+obj2.gpayapp();
+
+-----------------------------------------------------------------
+
+2. interface :
+
+
+package .org.inter;
+
+public interface google {
+
+ public abstract void gmail();
+
+     public abstract void gdrive ();
+}
+
+----------------------------------------------
+ package .org.inter;
+          
+public interface photos {
+
+public abstract void whatsapppic();
+
+     public abstract void downloads();
+}
+
+------------------------------------------------
+package .org.inter;
+
+public class googleforms implements google , photos {
+
+public void gmail() {
+        system.out.println("mail id is valid");
+}
+       public void gdrive() {
+          system.out.println("gdrive is full ");
+
+}
+          public void whatsapppic() {
+             system.out.println("whatsapppic created");
+}
+
+public void downloads() {
+             system.out.println("downloads folder created");
+}
+
+public static void main (string[] args)
+
+googleforms obj3 = new googleforms ();
+
+obj3.gmail();
+obj3.gdrive();
+obj3.whatsapppic();
+obj3.downloads();
+
+}
+----------------------------------------------------------------------------
+
+
+
+
+
+

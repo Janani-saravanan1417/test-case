@@ -1,0 +1,79 @@
+Exception handling :
+
+package org.exception;
+
+public class javaexception {
+     public static void main(string[] args) {
+int a = 50 ;
+    try {
+          int c = a/0;
+          system.out.println("divided value :" +c);
+} catch (Exception e) {
+       system.out.println("exception type :" +e);
+} finally {
+      system.out.println(" exception handling is used ");
+}
+----------------------------------------------
+  public class NullPointerExceptionExample {  
+    public static void main(String[] args) {  
+        String s = null;   
+        try {  
+            int length = s.length();   
+            System.out.println("Length of the string: " + length);  
+        } catch (NullPointerException e) {  
+            System.out.println("exception type : +e");  
+           
+        } finally {
+System.out.println("exception handling is used ");
+
+}
+ 
+    }
+} 
+
+------------------------------------------------------------
+public class ArrayindexException {
+  public static void main(String[] args) {  
+int ar [] = new int [4];
+ar[0] =100;
+ar[1]=200;
+ar[2]=300;
+ar[3]=400;
+
+try {
+      ar[4]=500;
+} catch(Exception e) {
+
+system.out.println("exception type :" +e);
+} 
+}
+}
+------------------------------------------------------------
+
+public class number format exception {
+
+string s = "2000" ;
+int number = Integer.parseInt(s); 
+ System.out.println("the string converted in to integer "+number);
+}
+
+-----------------------------------------------------------------
+ THROW :
+Public class A {
+
+    Public static void markcheck (int mark) {
+      
+      if (mark<50) {
+         throw new illegalargumentException("Mark is lessthan 50 is fail");
+}
+      System.out.println("mark greater than 50 is pass");
+}
+
+--------------------------------------------------------------------------------------
+
+
+       
+    
+
+
+   

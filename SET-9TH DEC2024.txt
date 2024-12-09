@@ -1,0 +1,85 @@
+SET :
+
+import java.util.hashset;
+import java.util.set;
+
+public class setclass {
+
+public static void main(string[] args) {
+  set <Integer> set1 = new hashset <Integer> ();
+   set1.add(9000);
+   set1.add(5000);
+   set1.add(7000);
+   set1.add(8000);
+
+   System.out.println(set1);
+    
+    System.out.println(set1.size());
+
+
+set <Integer> set2 = new hashset <Integer> ();
+   set2.add(9);
+   set2.add(5);
+   set2.add(7);
+   set2.add(8);
+
+   System.out.println(set2);
+    
+    System.out.println(set2.size());
+}
+}
+
+for (Integer integer :set2) {
+  System.out.println(integer);
+}
+
+set1.remove(7000);
+ System.out.println(set1);
+
+
+System.out.println(set2.contains(8));
+
+System.out.println(set2.isempty());
+
+List<Integer> listfive = new ArrayList<Integer> ();
+listfive.add(89);
+listfive.add(45);
+listfive.add(63);
+listfive.add(11);
+listfive.add(78);
+
+ System.out.println(listfive);
+
+
+listfive.addall(set1);
+System.out.println(listfive);
+}
+}
+
+set1.retainall(listfive);
+System.out.println(set1);
+
+set1.addall(set2);
+System.out.println(set1);
+
+
+set1.removeall(set2);
+System.out.println(set1);
+
+
+
+set <Integer> set3 = new Linkedhashset <Integer> ();
+   set3.add(101);
+   set3.add(201);
+   set3.add(301);
+   set3.add(401);
+   set3.add(201);
+
+   System.out.println(set3);
+
+
+
+
+
+    
+    

@@ -1,0 +1,108 @@
+package org.collecxtions;
+
+import java.util.arraylist;
+import java.util.List;
+
+public class ListClass {
+   public static void main(string[] args) {
+
+List<string> listten =new ArrayList<string>();
+
+listten.add("apple");
+listten.add("Mango");
+listten.add("Orange");
+listten.add("Avocado");
+listten.add("Kiwi");
+
+system.out.println(listten);
+
+System.out.println(listten.get(3));
+
+System.out.println(listten.size());
+
+System.out.println(listten.indexof("Avocado"));
+
+System.out.println(listten.lastindexof("kiwi"));
+
+listten.set(2,"Banana");
+System.out.println(listten);
+
+listten.add(5,"pineapple");
+System.out.println(listten);
+
+System.out.println(listten.contains("pineapple"));
+
+listten.remove(1);
+System.out.println(listten);
+
+listten.add(null);
+System.out.println(listten);
+
+
+List listtwenty =new ArrayList();
+
+listtwenty.add("1001");
+listtwenty.add("2001");
+listtwenty.add("3001");
+listtwenty.add("4001");
+listtwenty.add("5001");
+
+system.out.println(listtwenty);
+
+listtwenty.addall(listten);
+system.out.println(listtwenty);
+
+for (int i=0; i< listtwenty.size(); i++) {
+    system.out.println(listtwenty.get(i));
+}
+
+for (Object object : listten) {
+   system.out.println(object);
+}
+
+LINKEDLIST:
+
+
+LinkedList<string> listthirty =new LinkedList<string>();
+
+listthirty.add("pranav");
+listthirty.add("Janani");
+listthirty.add("vani");
+listthirty.add("leela");
+listthirty.add("kavery");
+
+system.out.println(listthirty);
+
+listthirty.addFirst("priya");
+system.out.println(listthirty);
+
+listthirty.addLast("jeeva");
+system.out.println(listthirty);
+
+listthirty.poll();
+system.out.println(listthirty);
+
+listthirty.pollLast();
+system.out.println(listthirty);
+
+listthirty.removeLast();
+system.out.println(listthirty);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

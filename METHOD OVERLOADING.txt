@@ -1,0 +1,36 @@
+package org.metoverload;
+
+public class schoolMethodOverLoading {
+	public void school (String s) {
+		System.out.println("SchoolName :" +s);
+	}
+	public void school (int a) {
+		System.out.println("no.of.Branches :" +a);
+	}
+	
+    public void school (int a, String s) {
+	    System.out.println(" no.of.Branches & SchoolName  : "+a+s);
+	}
+	public void school (int a, String s, char ch) {
+		System.out.println(" no.of.Branches  &  SchoolName & lab block :" + a + s + ch);
+	}
+	
+	public void school (char ch, String s) {
+		System.out.println("lab block & SchoolName:"+ch+s);
+	}
+	public void school (String s, char ch) {
+		System.out.println(" SchoolName & lab block :" + s + ch);
+	}
+	
+	public static void main(String[] args) {
+		schoolMethodOverLoading obj3 = new schoolMethodOverLoading ();
+		obj3.school(10);
+		obj3.school("NSN schools");
+		obj3.school(20,"Valliammal schools");
+		obj3.school(30,"DM schools",'A');
+		obj3.school('A',"DM schools");
+		obj3.school("DM schools",'A');
+	}
+}
+
+

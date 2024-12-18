@@ -1,0 +1,94 @@
+MAP :
+
+package org.Collections;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class MapClass {
+	
+
+	public static void main(String[] args) {
+
+hash map	:
+		Map <String , Integer> lc = new HashMap <String , Integer> ();
+		lc.put("Priya", 29000);
+		lc.put("Asha", 35000);
+		lc.put("keerthi", 41000);
+		lc.put("Ambika", 50000);
+		lc.put("latha", 95000);
+		lc.put("preethi", 85000);
+		
+		System.out.println(lc);
+
+------------------------------------------------------------------------------------------------------------------
+		
+ LinkedHashMap :
+
+		Map <String , Integer> lc1 = new LinkedHashMap <String , Integer> ();
+		 lc1.put("Priya", 29000);
+		 lc1.put("Asha", 35000);
+		 lc1.put("keerthi", 41000);
+		 lc1.put("Ambika", 50000);
+		 lc1.put("latha", 95000);
+		 lc1.put("latha", 85000);
+		
+		System.out.println( lc1);
+
+-------------------------------------------------------------------------------------------------------------------
+		
+TreeMap :
+		Map <String , Integer> lc2 = new TreeMap <String , Integer> ();
+		 lc2 .put("Priya", 29000);
+		 lc2 .put("Asha", 35000);
+		 lc2 .put("keerthi", 41000);
+		 lc2 .put("Ambika", 50000);
+		 lc2 .put("latha", 95000);
+		 lc2 .put("latha", 85000);
+		
+		System.out.println( lc2 );
+
+------------------------------------------------------------------------------------------------------------------------
+		
+		
+		System.out.println(lc.size());
+		
+		System.out.println(lc.get("keerthi"));
+		
+		System.out.println(lc.containsKey("latha"));
+		
+		System.out.println(lc.containsValue(50000));
+		
+		Set<String> keySet = lc.keySet();  
+		System.out.println(keySet);
+		
+		Collection<Integer> values = lc1.values();
+		System.out.println(values);
+		
+		Set<Entry<String, Integer>> entrySet = lc1.entrySet();
+		System.out.println(entrySet);
+		
+		
+		for (Entry<String, Integer> entry : entrySet) {
+			System.out.println(entry);
+		}
+		
+		for (Entry<String, Integer> entry : entrySet) {
+			System.out.println(entry.getKey());
+		}
+		
+		for (Entry<String, Integer> entry : entrySet) {
+			System.out.println(entry.getValue());
+		}
+		
+		
+		
+		
+	}
+
+}
